@@ -1,0 +1,4 @@
+@include component('header') {
+	@include element('brand') {}
+	@include element('image') {}
+}

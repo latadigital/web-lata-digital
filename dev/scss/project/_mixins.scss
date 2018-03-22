@@ -1,0 +1,71 @@
+@mixin no-gutter {
+	padding-left: 0;
+	padding-right: 0;
+}
+@mixin img-resize {
+	width: auto;
+	height: 100%;
+}
+@mixin trim-text {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+@mixin img-disabled {
+	pointer-events: none;
+	user-select: none;
+}
+
+@mixin vertical-center {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+// Create class margin and padding sides to 10 in 10
+@each $number in $numbers {
+	@each $side in $sides {
+		.u-m#{nth($side, 1)}#{nth($number, 1)} {
+			margin-#{nth($side, 2)}: $number+px;
+		}
+		.u-p#{nth($side, 1)}#{nth($number, 1)} {
+			padding-#{nth($side, 2)}: $number+px;
+		}
+	}
+}
+
+// Triangle
+@mixin triangle($direction, $size: 10px, $color: $black){
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  @if ($direction == 'top'){
+    border-bottom: $size solid $color;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+  }
+  @else if ($direction == 'right'){
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  }
+  @else if ($direction == 'bottom'){
+    border-top: $size solid $color;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+  }
+  @else if ($direction == 'left'){
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+  }
+}
+// .foo {
+//   &:after {
+//     @include triangle(bottom, 10px, blue);
+//   }
+// }
+

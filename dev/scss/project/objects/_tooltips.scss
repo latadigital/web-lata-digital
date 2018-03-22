@@ -1,0 +1,5 @@
+@include object('tooltip') {
+	&[data-tooltip]:before {
+		content: attr(data-tooltip);
+	}
+}

@@ -1,0 +1,84 @@
+// Text
+@include utility('text_center') {
+	text-align: center;
+}
+@include utility('text_left') {
+  text-align: left;
+}
+@include utility('text_right') {
+  text-align: right;
+}
+@include utility('pull_right') {
+	float: right;
+}
+@include utility('pull_left') {
+	float: left;
+}
+@include utility('underline') {
+	text-decoration: underline;
+}
+// Boxes
+@include utility('no_gutter') {
+	@include no-gutter;
+}
+@include utility('vertical_center') {
+	display: table-cell;
+	vertical-align: middle;
+}
+@include utility('no_margin') {
+	margin:0;
+}
+@include utility('clearfix') {
+	display:block;
+	width:100%;
+	clear:both;
+}
+
+// Positions
+@include utility('cover') {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@include utility('center') {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: auto;
+	margin-right:auto;
+	left:0;
+	right:0;
+}
+
+// Images
+@include utility('img_disabled') {
+	@include img-disabled;
+}
+@include utility('img_responsive') {
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+
+// visibility
+@include utility('hidden_mobile') {
+	@include max-screen(991px) {
+		display:none!important;
+	}
+}
+@include utility('hidden_desktop') {
+	@include min-screen(992px) {
+		display:none!important;
+	}
+}
+
+// line
+@include utility('line') {
+}
+
+// Border
+@include utility('no_border') {
+	border:none!important;
+}

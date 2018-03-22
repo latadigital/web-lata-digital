@@ -1,0 +1,4 @@
+@include object('title') {
+	@include modifier('big') {}
+	@include modifier('small') {}
+}

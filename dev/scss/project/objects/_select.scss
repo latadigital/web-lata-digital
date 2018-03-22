@@ -1,0 +1,15 @@
+@include object('select') {
+	@include element('label') {}
+	@include element('selector') {}
+
+	select:not([multiple]){
+		-webkit-appearance:none;
+		-moz-appearance:none;
+		background-position:right 50%;
+		background-repeat:no-repeat;
+		background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAABGdBTUEAALGPC/xhBQAAANtJREFUKBVjYAACNvvsQG7nfHEQmxggE1rIyW6f4wlSy8hmm+3PwPB/HSMjw00WVlbHr3snvsRnCEjz6xc/Nv1nYHRiYmSIY2Jn5jgK1HDl////mn9+/96PzyUIzQwuQAtf/WNiOssIso3XoVjk59/ve4Eu0WNkZLyOzSWomhlf/Gdicvx1YMoNsAGEDMGlGaQPbgAuQwSFmD5B/AxyNsJmkHoQQDEAJIDuHYb/DM/+M/x3xqYZqwHohoAVYbEZJA4CGC6ACCNcAgxtMViAweSIpkHeYXfOVsOnAQBKAoQ703DP/wAAAABJRU5ErkJggg==');
+		background-position:95% center;
+		padding-right:40px;
+		padding-left:15px;
+	}
+}
