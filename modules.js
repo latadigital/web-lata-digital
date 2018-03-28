@@ -21,3 +21,5 @@ window.jQuery = $ = window.$ = require('jquery');
 
 // var slick = require('slick-carousel-browserify');
 
+// Particles
+// require('particles-js');

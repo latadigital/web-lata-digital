@@ -1,0 +1,320 @@
+@include component('about') {
+    padding: 100px 0px;
+    @media(max-width: 1280px) {
+        padding: 100px 50px;
+    }
+    @media(max-width: 810px) {
+        padding: 100px 20px;
+    }    
+
+    h1 {
+        text-align: center;
+        font-size: 31px;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: block;
+        margin: 0px auto 100px;
+        @media(max-width: 992px) {
+            font-size: 20px;
+            margin-bottom: 80px;
+        }
+    }
+
+    @include element('items') {
+        height: 1%;
+        overflow: hidden;
+    }
+
+    @include element('item'){
+        float: left;
+        height: 1%;
+        overflow: hidden;
+        margin-bottom: 60px;
+        width: 50%;
+        @media(max-width: 810px) {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+
+    @include element('icon') {
+        float: left;
+        width: 10%;
+        @media(max-width: 810px) {
+            padding: 0px 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }       
+        
+        img {
+            @media(max-width: 810px) {
+                width: 65px;
+            }              
+        }
+    }
+
+    @include element('text') {
+        float: left;
+        padding: 0px 75px 0px 18px;
+        width: 90%;
+        @media(max-width: 810px) {
+            padding: 0px 20px;
+            width: 100%;
+        }        
+
+        h2 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+    }    
+}
+
+@include component('areas') {
+    background: linear-gradient(45deg, #f98fc7 0%,#e565a9 100%);
+    position: relative;
+    @media(max-width: 1250px) {
+        padding: 0px 20px;
+    }
+
+    @include element('info') {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0px;
+        @media(max-width: 992px) {
+            position: initial;
+            top: 0px;
+            padding: 40px 0px 10px;
+            transform: none;
+            text-align: center;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 70px;
+            text-transform: uppercase;
+            font-weight: 800;
+            color: #fff;
+            line-height: 60px;
+            margin-bottom: 40px;
+            @media(max-width: 992px) {
+                font-size: 40px;
+                line-height: 35px;
+            }              
+        }
+
+        a {
+            height: 50px;
+            width: 250px;
+            background: none;
+            border: 1px solid #fff;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50px;
+            display: block;
+            text-transform: uppercase;
+            transition: all 250ms;
+            font-size: 20px;
+            @media(max-width: 992px) {
+                margin: 0px auto;
+                height: 30px;
+                line-height: 30px;
+                font-size: 16px;
+                width: 150px;
+            }            
+
+            &:hover {
+                background: #fff;
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+
+    @include element('image') {
+        float: right;
+        width: 70%;
+        @media(max-width: 992px) {
+            text-align: center;
+            width: 100%;
+        }        
+
+        img {
+            height: auto;
+            width: 100%;
+            @media(max-width: 992px) {
+                display: inline-block;
+                max-width: 700px;
+            }                    
+        }
+    }
+
+    @include modifier('purple-gradient') {
+        background: linear-gradient(45deg, #a271be 0%,#744b8b 100%);
+    }
+
+    @include modifier('light-gradient') {
+        background: linear-gradient(45deg, #87c5da 0%,#3b96b5 100%);
+    }    
+}
+
+@include component('brands') {
+    padding: 100px 0px;
+
+    h1 {
+        font-size: 31px;
+        font-weight: 800;
+        text-transform: uppercase;
+        max-width: 600px;
+        text-align: center;
+        margin: 0px auto 90px;
+        @media(max-width: 992px) {
+            font-size: 20px;
+            margin-bottom: 80px;
+        }        
+    }
+
+    @include element('items') {
+        height: 1%;
+        overflow: hidden;
+    }
+
+    @include element('item') {
+        float: left;
+        height: 80px;
+        position: relative;
+        margin-bottom: 70px;
+        text-align: center;
+        width: 20%;
+        @media(max-width: 1250px) {
+            width: 25%;
+        }
+
+        @media(max-width: 992px) {
+            width: 33.3%;
+        } 
+        
+        @media(max-width: 600px) {
+            width: 50%;
+        }         
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            max-width: 100%;
+            @media(max-width: 420px) {
+                width: 100px;
+            }                   
+        }
+    }    
+}
+
+@include component('contacto') {
+    background: linear-gradient(45deg, #d852a4 0%,#8587b5 53%,#53a7be 100%);
+    padding: 100px 0px;
+
+    h1 {
+        font-size: 31px;
+        font-weight: 800;
+        text-transform: uppercase;
+        max-width: 600px;
+        text-align: center;
+        color: #fff;
+        margin: 0px auto 50px; 
+        @media(max-width: 992px) {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }               
+    }
+
+    @include element('form') {
+        height: 1%;
+        overflow: hidden;
+
+        form {
+            height: 1%;
+            overflow: hidden;
+
+            .input {
+                float: left;
+                margin-bottom: 20px;
+                padding: 0px 10px;
+                width: 50%;
+                @media(max-width: 600px) {
+                    width: 100%;
+                }                  
+
+                input {
+                    height: 60px;
+                    border: none;
+                    padding: 0px 20px;
+                    outline: none;
+                    width: 100%;
+                }
+
+                &.submit {
+                    float: right;
+                    width: 20%;
+                    @media(max-width: 600px) {
+                        width: 200px;
+                    }                     
+                }
+
+                &.message {
+                    width: 100%;
+
+                    textarea {
+                        border: none;
+                        padding: 10px;
+                        outline: none;                                            
+                        height: 120px;
+                        resize: none;
+                        width: 100%;
+                    }                    
+                }
+            }
+        }
+    }
+}
+
+
+canvas{
+	display:block;
+	vertical-align:bottom;
+}
+
+#areaOne {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	width:100%;
+	height:100%;
+}
+
+#areaTwo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	width:100%;
+	height:100%;
+}
+
+#areaThree {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	width:100%;
+	height:100%;
+}

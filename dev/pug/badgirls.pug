@@ -1,0 +1,11 @@
+extends layouts/default.pug
+
+block vars
+    - var pageTitle = 'BadGirls8'
+
+block content
+    .svg-container
+        svg.svg(viewbox='0 0 800 400')
+            path#curve(fill='#f73a7b', d='M 800 100 Q 600 460 0 300 L 0 0 L 800 0 L 800 300 Z')
+
+block append scripts

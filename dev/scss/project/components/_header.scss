@@ -1,4 +1,30 @@
 @include component('header') {
-	@include element('brand') {}
-	@include element('image') {}
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 15px 0px;
+	text-align: right;
+	width: 100%;
+	z-index: 9999;
+	@media(max-width: 1250px) {
+		padding: 15px 20px;
+	}
+
+	@include element('brand') {
+		float: left;
+	}
+
+	@include element('nav') {
+		float: right;
+		display: inline-block;
+		color: #222222;
+		width: 60px;
+		line-height: 57px;
+		text-align: center;
+		font-size: 30px;
+	}
+
+	@include modifier('sticky') {
+		background: #fff;
+	}
 }

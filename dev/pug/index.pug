@@ -4,6 +4,120 @@ block vars
 	- var pageTitle = 'home'
 
 block content
+	include partials/_bigbanner.pug
+	.c-about
+		.c-inner
+			h1 Lorem ipsum dolor sit
+				br 
+				|amet, consectetur adipiscing elit
+			.c-about__items
+				.c-about__item
+					.c-about__icon
+						img(src="img/iconos/icon-diseno-desarrollo.svg", alt="Diseño y desarrollo")
+					.c-about__text
+						h2 diseño y Desarrollo web
+						p Somos especialistas en desarrollar aplicaciones web. Hacemos proyectos de gran tamaño, planificando cada paso para brindar la mejor experiencia en navegación y optimización. RESPONSIVE DESIGN no es un privilegio, es una realidad, una necesidad en las web.
+				.c-about__item
+					.c-about__icon
+						img(src="img/iconos/icon-redes-sociales.svg", alt="Redes sociales")
+					.c-about__text
+						h2 Redes sociales
+						p Somos especialistas en desarrollar aplicaciones web. Hacemos proyectos de gran tamaño, planificando cada paso para brindar la mejor experiencia en navegación y optimización. RESPONSIVE DESIGN no es un privilegio, es una realidad, una necesidad en las web.
+				.c-about__item
+					.c-about__icon
+						img(src="img/iconos/icon-medios-digitales.svg", alt="Medios digitales")
+					.c-about__text
+						h2 Medios digitales
+						p Somos especialistas en desarrollar aplicaciones web. Hacemos proyectos de gran tamaño, planificando cada paso para brindar la mejor experiencia en navegación y optimización. RESPONSIVE DESIGN no es un privilegio, es una realidad, una necesidad en las web.
+				.c-about__item
+					.c-about__icon
+						img(src="img/iconos/icon-audiovisual.svg", alt="Audiovisual")
+					.c-about__text
+						h2 Audiovisual
+						p Somos especialistas en desarrollar aplicaciones web. Hacemos proyectos de gran tamaño, planificando cada paso para brindar la mejor experiencia en navegación y optimización. RESPONSIVE DESIGN no es un privilegio, es una realidad, una necesidad en las web.
+	.c-areas
+		#areaOne
+		.c-inner
+			.c-areas__info
+				h1 Redes
+					br 
+					| sociales
+				a(href="#") Ver más
+			.c-areas__image
+				img(src="img/home-redes-sociales.png")
+	.c-areas.c-areas--purple-gradient
+		#areaTwo
+		.c-inner
+			.c-areas__info
+				h1 Diseño y
+					br
+					| desarrollo 
+					br
+					| web
+				a(href="#") Ver más
+			.c-areas__image
+				img(src="img/home-diseno-desarrollo.png")
+	.c-areas.c-areas--light-gradient
+		#areaThree
+		.c-inner
+			.c-areas__info
+				h1 Audiovisual
+				a(href="#") Ver más
+			.c-areas__image
+				img(src="img/home-audiovisual.png")
+	.c-brands
+		.c-inner
+			h1 Lorem ipsum dolor sit
+				br
+				| amet, consectetur adipiscing elit
+			
+			.c-brands__items
+				.c-brands__item
+					img(src="img/brands-entel.png")
+				.c-brands__item
+					img(src="img/brands-festina.png")
+				.c-brands__item
+					img(src="img/brands-morph.png")
+				.c-brands__item
+					img(src="img/brands-clinica-san-pedro.png")
+				.c-brands__item
+
+				.c-brands__item
+					img(src="img/brands-mosqueto.png")
+				.c-brands__item
+					img(src="img/brands-san-francisco.png")
+				.c-brands__item
+					img(src="img/brands-catedral.png")
+				.c-brands__item
+					img(src="img/brands-echaurren.png")
+				.c-brands__item
+					img(src="img/brands-solyluna.png")
+				.c-brands__item
+					img(src="img/brands-trinidad.png")
+				.c-brands__item
+					img(src="img/brands-cumming.png")
+				.c-brands__item
+					img(src="img/brands-holley.png")
+	.c-contacto
+		.c-inner
+			h1 Lorem ipsum dolor sit
+				br
+				| amet, consectetur adipiscing elit
+
+			.c-contacto__form
+				form(action="#")
+					.input.name
+						input(type="text" placeholder="Nombre")
+					.input.email
+						input(type="text" placeholder="Email")
+					.input.asunto
+						input(type="text" placeholder="Asunto")
+					.input.phone
+						input(type="text" placeholder="Teléfono")
+					.input.message
+						textarea(type="text" placeholder="Mensaje")
+					.input.submit
+						input(type="submit" value="Enviar")
 
 block append scripts
 

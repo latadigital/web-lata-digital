@@ -1,0 +1,73 @@
+@include component('bigbanner') {
+    height: 1%;
+    overflow: hidden;
+    background: url('../img/bigbanner-slide-bg.png');
+
+    @include element('image') {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        width: 1000px;
+        @media(max-width: 1250px) {
+            width: 700px;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+    
+    @include element('text') {
+        margin: 427px 0;
+        max-width: 585px;
+        padding-left: 75px;
+        @media(max-width: 1250px) {
+            margin: 260px 0;
+        }        
+
+        @media(max-width: 740px) {
+            padding-left: 20px;
+            width: 100%;
+        }                     
+
+        h1 {
+            color: #333333;
+            text-transform: uppercase;
+            font-weight: 800;
+            line-height: 55px;
+            font-size: 60px;
+            @media(max-width: 740px) {
+                color: #fff;
+                line-height: 30px;
+                font-size: 35px;
+            }             
+
+            small {
+                font-size: 31px;
+                font-weight: 300;
+                line-height: 36px;
+                display: block;
+            }
+        }
+    }
+}
+
+@include component('inner') {
+    margin: 0px auto;
+    height: 1%;
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 10;
+}
+
+// .svg-container {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   left: 0;
+//   z-index: -1;
+// }
